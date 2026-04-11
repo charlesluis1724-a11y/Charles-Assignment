@@ -135,11 +135,11 @@ nav .nav_right {
     }
 }
 body {
-    background-image: url(./images1/26315dd6d8b9972744f4d854f4d5b70d.jpg);
+    /* background-image: url(./images1/26315dd6d8b9972744f4d854f4d5b70d.jpg); */
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: right;
-    background-color: #0d150e;
+    background-color: #0a0a0a;
     line-height: normal;
 }
 @media (max-width: 3456px) {
@@ -1492,7 +1492,11 @@ input {
     }
 }
 
-.afterbanner_back, .afterbanner_back2, .afterbanner_back5, .afterbanner_back7 {
+.afterbanner_back8 {
+    margin: 50px 0px 50px 0px;
+}
+
+.afterbanner_back, .afterbanner_back2, .afterbanner_back3, .afterbanner_back5, .afterbanner_back7 {
     height: 100%;
     border: 1px solid;
     background-color: #0000006d;

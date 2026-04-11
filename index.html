@@ -12,6 +12,7 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fretboard.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -118,6 +119,137 @@
         <p>"If it sounds good, it sounds good. It doesn't have to make sense."</p>
     </div>
     </div>
+
+
+
+<div class="afterbanner_back8">
+    <!-- FRETBOARD   -->
+<div class="overflow">
+    <div class="settings">
+        <label for="instrument-selector">Selected Instrument: </label>
+        <select name="instrument-selector" id="instrument-selector">
+        </select>
+        <div class="accidental-selector">
+                <input type="radio" class="acc-select" id="Flats" name="accidentals" value="Flats" checked>
+                <label for="Flats">♭</label>
+                <input type="radio" class="acc-select" id="Sharp" name="accidentals" value="Sharp">
+                <label for="Sharp ">♯</label>
+        </div>
+        <label class="number-of-frets" for="number-of-frets">Number of Frets: </label>
+        <input type="number" id="number-of-frets" min="5" max="30" value="20">
+        
+        <label for="show-all-notes">show-all-notes: </label>
+        <input type="checkbox" id="show-all-notes">
+        
+        <label for="show-multiple-notes">show multiple notes: </label>
+        <input type="checkbox" id="show-multiple-notes">
+    </div>
+    <div class="fretboard">
+        <!-- <div class="string">
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret single-fretmarks"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret single-fretmarks"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret single-fretmarks"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret single-fretmarks"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret">
+                <div class="double-fret"></div>
+            </div>
+            <div class="note-fret"></div>
+        </div>
+        <div class="string">
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+        </div>
+        <div class="string">
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+        </div>
+        <div class="string">
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+        </div>
+        <div class="string">
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+        </div>
+        <div class="string">
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+            <div class="note-fret"></div>
+        </div> -->
+    </div>
+</div>
+
+
+<br>
+    
+  
     
     <!-- sliding image -->
     <div class="afterbanner_back4">
@@ -466,6 +598,7 @@
      
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="index.js"></script>
 </body>
 
 </html>
